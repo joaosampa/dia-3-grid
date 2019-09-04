@@ -1,5 +1,22 @@
 aside{
+    background-color: #161714;
     grid-area: aside;
+}
+aside p{
+    font-family: 'Montserrat', sans-serif;
+}
+aside h2{
+    text-align: center;
+}
+aside h2, aside p{
+    color: white;
+    padding: 0 5px;
+}
+aside ul{
+    list-style-image: url("../images/mini\ nuvem.png")
+}
+aside ul li{
+    color: white;
 }
 body{
     display: grid;
@@ -9,8 +26,8 @@ body{
                          "header header header aside"
                          "section section section aside"
                          "footer footer footer footer";
-grid-template-columns: 30vw 30vw 30vw 30vw;
-grid-template-rows: 8vh 60vh 30vh 10vh;
+grid-template-columns: 25vw 25vw 25vw 25vw;
+grid-template-rows: 8vh 60vh 40vh 10vh;
 margin: 0;
 }
 footer{
