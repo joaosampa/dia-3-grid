@@ -3,10 +3,12 @@ aside{
 }
 body{
     display: grid;
+    cursor: url("../images/kunai\ branca.png"), default;
+    font-family: 'Permanent Marker', cursive;
     grid-template-areas: "nav nav nav nav"
-                         "header hearder header aside"
+                         "header header header aside"
                          "section section section aside"
-                         "foot footer footer footer";
+                         "footer footer footer footer";
 grid-template-columns: 30vw 30vw 30vw 30vw;
 grid-template-rows: 8vh 25vh 30vh 10vh;
 margin: 0;
@@ -18,7 +20,22 @@ header{
     grid-area: header;
 }
 nav{
+    align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
     grid-area: nav;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #bb2127;
+    cursor: url("../images/kunai\ branca.png"), default;
+}
+nav > img{
+    width: 70px;
 }
 section{
     grid-area: section;
